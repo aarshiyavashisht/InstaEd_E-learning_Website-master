@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="png" href="images/extra/single-logo.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>InstaEd</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+	
+	</script>
+	<Style>
+		/* Style for the iframe background */
+		iframe {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			border: none;
+			z-index: -1;
+			/* Place it behind other content */
+		}
+		.celebration {
+				display: none;
+				position: absolute;
+				font-size: 24px;
+				animation: confetti 3s linear;
+			}
+	
+			@keyframes confetti {
+				0% {
+					transform: translateY(0);
+					opacity: 0;
+				}
+				100% {
+					transform: translateY(-100px);
+					opacity: 1;
+				}
+			}
+	</Style>
+</head>
+
+<body>
+	<div>
+		<iframe src="background.html" scrolling="no"></iframe>
+
+		<!-- Navigation Bar -->
+
+		<header id="header">
+			<nav>
+				<div class="logo"><img height="40px" width="110px" src="images/extra/Logo-Copy.png" alt="logo"></div>
+				<ul>
+					<li><a class="active" href="">Home</a></li>
+					<li><a href="#services_section">Services</a></li>
+					<li><a href="#contactus_section">Contact</a></li>
+					<li>
+						<a class="nav-link" href="./subjects/quiz.html">Quiz</a>
+					</li>
+				</ul>
+				<label for="myInput" class="labela">
+					<span class="labela-title">Search Here</span>
+					<input id="myInput" class="input" name="text" placeholder="Type here..." type="text">
+				</label>
+
+				
+				<a class="get-started" href="login.html">Get Started</a>
+				<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+			</nav>
+			<!-- Sliding Information -->
+				<marquee style="background: linear-gradient(to right, #17C3B2, #17C3B2); margin-top: 50px;" direction="left"
+				onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20">
+				<div class="marqu" style="margin-top: 30px;">“Education is the passport to the future, for tomorrow belongs to those who prepare for it
+					today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is
+					expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and
+					change.”</div>
+			</marquee>
+			
+			<div class="head-container">
+				<div class="quote">
+					<p>The beautiful thing about learning is that nobody can take it away from you</p>
+					<h4>Education is the process of facilitating learning, or the acquisition of knowledge, skills,
+						values,
+						beliefs, and habits. Educational methods include teaching, training, storytelling, discussion
+						and
+						directed research!</h4>
+					
+				</div>
+				
+			</div>
+			
+		</header>
+	</div>
+	
+
+	<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section" >
+			<center>
+				<p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p>
+			</center>
+		</div>
+		<button style="margin-right: 100px; margin-bottom: 100px;">
+			<a href="subjects/computer_courses.html">
+				<div class="s-card"><img src="images/icon/computer-courses.png">
+					<p>Free Online Computer Courses</p>
+				</div>
+			</a>
+		</button>
+		<button  style="margin-right: 100px; margin-bottom: 100px;">
+			<a href="subjects/jee.html">
+				<div class="s-card"><img src="images/icon/brainbooster.png">
+					<p>Building Concepts for Competitive Exams</p>
+				</div>
+			</a>
+		</button>
+		<button style="margin-bottom: 100px;">
+			<a href="#">
+				<div class="s-card"><img src="images/icon/online-tutorials.png">
+					<p>Online Video Lectures</p>
+				</div>
+			</a>
+		</button>
+		<button style="margin-right: 100px;">
+			<a href="subjects/jee.html#sample_papers">
+				<div class="s-card"><img src="images/icon/papers.jpg">
+					<p>Sample Papers of Various Competitive Exams</p>
+				</div>
+			</a>
+		</button>
+		<button>
+			<a href="subjects/quiz.html">
+				<div class="s-card"><img src="images/icon/q1.png">
+					<p>Daily Brain Teasing Questions to Improve IQ</p>
+				</div>
+			</a>
+		</button>
+		<!-- <a href="#contactus_section"><div class="s-card"><img src="images/icon/help.png"><p>24x7 Online Support</p></div></a> -->
+	</div>
+
+	<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<center>
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+</center>
+	<div class="feedbox">
+		<div class="feed">
+			<form action="" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+			
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+	
+	
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img height="140px" width="510px" src="images/extra/Logo-Copy.png" alt="logo">
+				<div class="logo"></div>
+				<div class="social-media" style=" display:flex; justify-content: space-around;align-items:center">
+					<a href="#"><img height="30" width="60" src="images/icon\fb.png"></a>
+					<a href="#"><img height="30" width="60" src="images/icon\insta.png"></a>
+					<a href="#"><img height="30" width="60" src="images/icon\tt.png"></a>
+					<a href="#"><img height="30" width="60" src="images/icon\ytube.png"></a>
+					<a href="#"><img height="30" width="60" src="images/icon\linkedin.png"></a>
+				</div><br><br>
+			</div>
+
+			<div class="right-col">
+				<h1 style=" color: #fff">Our Newsletter</h1>
+
+				<div class="border"></div>
+				<br>
+
+				<p>Enter Your Email to get our News and updates.</p>
+				<br>
+				<br>
+
+				<form class="newsletter-form">
+					<div class="input-container" >
+						<br>
+
+						<input class="input" name="text" type="text">
+						<label class="label" style="color:white" for="input">Enter your email</label>
+						<div class="topline"></div>
+						<div class="underline"></div>
+					</div>
+					<!-- <div class="input__container">
+						<label class="input__label">Email</label>
+						<input placeholder="Enter your email" class="input" name="text" type="text">
+
+					</div> -->
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+	</footer>
+
+</body>
+
+</html>
